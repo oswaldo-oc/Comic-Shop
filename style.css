@@ -240,7 +240,7 @@ footer{
 		display: block;
 	}
 	.logo{
-		align-items: center;
+		justify-self: center;
 	}
 	.menu{
 		position: absolute;
