@@ -244,7 +244,7 @@ footer{
 	}
 	.menu{
 		position: absolute;
-		background: #e03145;
+		background: #8700118c;
 		width: 70%;
 		margin-left: -70%;
 		transition: all 0.8s;
@@ -255,9 +255,12 @@ footer{
 	#btn-menu:checked ~ .menu {
 		margin: 0;
 	}
+	.btnAdd{
+		justify-self: center;
+	}
 	.form-body{
-		margin-top: auto;
-		margin-bottom: 100%;
+		margin-top: 50%;
+		margin-bottom: 50%;
 	}
 	.product-container, #products, #main-products{
 		display: grid;
