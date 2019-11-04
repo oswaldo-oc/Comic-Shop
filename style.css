@@ -195,6 +195,8 @@ header .logo{
 	align-self: center;
 	border: none;
 	background-color: #C20018;
+	color: white;
+	font-size: 16px;
 }
 .pagar:hover{
 	background: #870011;
@@ -261,7 +263,10 @@ footer{
 		margin: 0;
 	}
 	.btnAdd{
+		height: 60px;
+		width: 120px;
 		justify-self: center;
+		font-size: 20px;
 	}
 	.form-body{
 		width: 80%;
@@ -273,6 +278,10 @@ footer{
 	}
 	.btn-lg{
 		font-size: 20px;
+	}
+	.pagar{
+		font-size: 20px;
+		height: 60px;
 	}
 	.product-container, #products, #main-products{
 		display: grid;
