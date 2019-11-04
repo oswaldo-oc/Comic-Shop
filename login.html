@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Comic-Shop</title>
+</head>
+<body>
+    <header class="header">
+           <a href="index.html"><img class="logo" src="img/logo.png"></img></a>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img src="img/menu.png" alt=""></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="home">Inicio</a></li>
+                    <li><a href="productos.html" class="productos">Productos</a></li>
+                    <li><a href="carrito.html" class="shopping-cart">Carrito <i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="login.html" class="username"> <i class="fas fa-user"></i></a></li>
+                    <li><a href="#" class="logout" id="logout">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container-username">
+                <div class="form-body">
+                    <a href="index.html"><img class="logo" src="img/logo.png"></img></a>
+                    <input class="form-control form-control-lg" type="text" id="username" placeholder="Nombre de usuario">
+                    <input class="form-control form-control-lg" type="password" id="pw" placeholder="Contraseña">
+                    <div class="botonL">
+                        <button id="btnLogin" class="btn-lg">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img class="logo" src="img/logo.png">
+            Siguenos:
+            <div class="social">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i><br><br>
+            </div>
+            <div class="about">
+                Contacto: comics-n-stuff@mail.com<br><br>
+            </div>
+        </footer>
+    <script src="app.js"></script>
+    <script>
+        loadLogin()
+        init()
+    </script>
+</body>
+</html>

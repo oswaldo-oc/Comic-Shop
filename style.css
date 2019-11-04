@@ -1,0 +1,287 @@
+body {
+	background-color: #F5D234;
+	margin: 0;
+}
+header{
+	width: 100%;
+}
+.header{
+	box-sizing: border-box;
+	position: relative;
+	
+}
+#btn-menu{
+	display: none;
+}
+#logout{
+	display: none;
+}
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+header label:hover{
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.1);
+}
+.menu{
+	position: relative;
+	z-index: 10;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+.menu li a{
+	display: block;
+	font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu li a{
+	padding: 15px 20px;
+}
+.menu li:hover{
+    background-color: #870011;
+}
+#slider-container{
+	position: relative;
+	z-index: 5;
+	margin-top: 3%;
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo {
+	margin: 13px;
+	width: 250px;
+}
+header .logo{
+	width: 280px;
+}
+.logo a {
+	text-decoration: none;
+}
+.product-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+}
+.name, .price{
+	font-size: 20px;
+	text-align: center;
+}
+.image{
+	border: 3px solid black;
+	align-self: center;
+	width: 300px;
+	height: 450px;
+}
+.container-username {
+	padding-bottom: 30px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
+}
+.form-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 50%;
+}
+.form-body h1{
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 25px;
+}
+.botonL{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding-top: 25px;
+}
+.form-control {
+	border: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    height: 2.2em;
+    color: #6b6b6b;
+	background-color:#ffffff;
+	border: 2px solid black;
+    background-image: none;
+	margin-bottom: 10px;
+	outline: none;
+}
+.form-control-lg {
+    width: 100%;
+}
+.btn-lg{
+	height: 50px;
+	background-color: #C20018;
+	border: none;
+}
+.btnAdd{
+	height: 50px;
+	width: 100px;
+	margin-bottom: 10px;
+	align-self: center;
+	background-color: #C20018;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.btnAdd:hover{
+	background: #870011;
+}
+.btn-lg:hover{
+	background: #870011;
+}
+.product-added{
+	position: relative;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.container-imgcart{
+	display: flex;
+	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
+	margin: 30px;
+}
+.container-info{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin: 10px;
+}
+.total{
+	display: flex;
+	flex-direction: column;
+}
+.total-price{
+	align-self: center;
+}
+.btn-view{
+	text-align: center;
+	display: block;
+	margin: 10px;
+	font-size: 30px;
+    color: #000000;
+	text-decoration: none;
+	align-self: center;
+}
+.pagar{
+	width: 70%;
+	height: 50px;
+	align-self: center;
+	border: none;
+	background-color: #C20018;
+}
+.pagar:hover{
+	background: #870011;
+}
+.btn-pay{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	padding: 10px;
+}
+header{
+	background-color: #C20018;
+	padding: 10px 0;
+}
+header .container{
+	display: flex;
+	justify-content: flex-start;
+}
+#main-products{
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	justify-content: center;
+}
+#main-products .name{
+	font-size: 15px;
+}
+footer{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+	background-color: #C20018;
+}
+.social, .about{
+	font-size: 20px;
+	text-align: center;
+}
+@media (max-width:768px) {
+	header label{
+		display: block;
+	}
+	.logo{
+		align-items: center;
+	}
+	.menu{
+		position: absolute;
+		background: #e03145;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.8s;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+	}
+	.form-body{
+		margin-top: auto;
+		margin-bottom: 100%;
+	}
+	.product-container, #products, #main-products{
+		display: grid;
+	}
+	.product-added{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	.container-imgcart{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin: 10px;
+	}
+	.container-info{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	footer{
+		position: relative;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+}

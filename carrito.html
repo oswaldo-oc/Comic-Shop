@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Comic-Shop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=no,
+        initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img class="logo" src="img/logo.png"></img></a>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img src="img/menu.png" alt=""></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="home">Inicio</a></li>
+                    <li><a href="productos.html" class="productos">Productos</a></li>
+                    <li><a href="carrito.html" class="shopping-cart">Carrito <i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="login.html" class="username">Iniciar Sesión <i class="fas fa-user"></i></a></li>
+                    <li><a href="#" class="logout" id="logout">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="cart-products" id="cart-products">
+                <div class="info">
+                    <div class="product-added"></div>
+                </div>
+            </div>
+        </main>
+        <div class="total">
+            <h2 class="total-price"></h2>
+        </div>
+        <div class="btn-pay">
+            <button class="pagar">Pagar</button>
+        </div>
+        <footer>
+            <img class="logo" src="img/logo.png">
+            Siguenos:
+            <div class="social">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i><br><br>
+            </div>
+            <div class="about">
+                Contacto: comics-n-stuff@mail.com<br><br>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+        <script>
+            init()
+            initCart()
+        </script>
+    </body>
+</html>
