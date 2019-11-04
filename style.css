@@ -262,6 +262,7 @@ footer{
 		justify-self: center;
 	}
 	.form-body{
+		width: 80%;
 		margin-top: 50%;
 		margin-bottom: 50%;
 	}
