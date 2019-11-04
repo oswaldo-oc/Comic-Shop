@@ -141,10 +141,10 @@ header .logo{
 	width: 100px;
 	margin-bottom: 10px;
 	align-self: center;
+	color: white;
 	background-color: #C20018;
 	border: none;
 	font-size: 14px;
-	font-weight: bold;
 }
 .btnAdd:hover{
 	background: #870011;
